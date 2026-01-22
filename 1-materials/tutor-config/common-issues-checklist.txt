@@ -1,0 +1,10 @@
+Hidden checklist of common issues (not shown to students)
+
+- A workflow representing some requirements from project specification is missing.
+- Events or commands or types are used in workflows but are not defined.
+- Events or commands or types are defined but not used in any workflow.
+- A workflow is missing input and/or output parameters.
+- Stop conditions are not explicitly managed (when/how trading stops).
+- There is no workflow step corresponding to retrieval of order status.
+- The model does not address how market-data comparison for real-time trading is executed (how the latest value is maintained).
+- Incorrect notation: long sentences are used instead of pseudocode.

@@ -1,0 +1,8 @@
+kb_id,title,type,status,reason
+KB01,Lecture slides (Domain-Driven Design 01–04),slides,withheld_during_review,May reveal course association / double-blind risk
+KB02,Project specification (course-specific),specification,withheld_during_review,May reveal course/project association / double-blind risk
+KB03,Assignment description and rubric (PDF),assignment,withheld_during_review,Course-specific; will be released post-acceptance
+KB04,Project rubric - elaborated (PDF),rubric,withheld_during_review,Course-specific; will be released post-acceptance
+KB05,Exemplary student deliverable (PDF),example,withheld_during_review,May contain identifying details; will be released post-acceptance
+KB06,Sample instructor feedback (PDF),example,withheld_during_review,May contain identifying details; will be released post-acceptance
+KB07,Common issues log (internal),notes,included,Provided as a redacted checklist in common-issues-checklist.txt
