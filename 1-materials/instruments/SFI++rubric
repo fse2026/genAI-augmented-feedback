@@ -1,0 +1,29 @@
+## Structured Feedback Integration (SFI++) — Depth of Feedback Analysis Rubric
+
+This rubric extends the original SFI metric by capturing the **depth of reasoning applied when interpreting and integrating GenAI feedback**, rather than only the traceability of edits.
+
+### Scoring Levels
+
+| Level | Description |
+|------|-------------|
+| **4 — Thorough analysis** | The participant systematically reviews all GenAI feedback and explicitly discusses its relevance, validity, or applicability to the project. Each decision (accept/reject) is supported with clear, logical justification grounded in the artifact or requirements. |
+| **3 — Mostly thorough analysis** | The participant reviews most feedback items and discusses their relevance, validity, or applicability. Reasoning is provided for most decisions, though some items may be less thoroughly justified. |
+| **2 — Partial analysis** | The participant reviews some feedback but overlooks important points. Reasoning is superficial, incomplete, or inconsistently applied across decisions. |
+| **1 — Minimal analysis** | The participant demonstrates little to no critical evaluation of feedback. Relevance, validity, or applicability are rarely discussed, and decisions lack justification. |
+
+---
+
+### Interpretation Guidelines
+
+- **Focus of the metric:** evaluates *how* feedback is interpreted and acted upon, not *what* changes were made.
+- **Scope:** applied to individual change logs describing integration of GenAI suggestions.
+- **Key dimension:** presence and quality of reasoning behind accept/reject decisions.
+- **Relation to SFI:** complements SFI by capturing evaluative judgment, whereas SFI captures traceability of changes.
+
+---
+
+### Notes
+
+- This rubric is intended to capture **evaluative judgment and decision-making effort** in feedback integration.
+- High SFI++ scores indicate deeper engagement with feedback, not necessarily higher correctness of the final artifact.
+- Full examples and annotated scoring cases are provided in the replication package.
