@@ -1,0 +1,48 @@
+## Coding Scheme for GenAI Feedback Analysis
+
+This document defines the coding dimensions used to analyze GenAI-generated feedback at the issue level.
+
+---
+
+## 1. Relevance to Rubric
+
+Classifies whether a feedback item aligns with assessed criteria for Milestone I.
+
+| Category | Description | Notes / Examples |
+|----------|-------------|------------------|
+| **Direct** | Feedback that directly aligns with assessed rubric criteria (e.g., completeness, correctness, clarity of design artifact). | Core to evaluation. |
+| **Indirect** | Feedback reflecting good practice or general improvement, but not clearly rewarded by the Milestone I rubric. | Example: suggestions for improving naming consistency beyond rubric requirements. |
+| **Out-of-scope** | Feedback not assessed by the Milestone I rubric. | Example: logging/monitoring, latency/performance optimization, deployment or operations advice. |
+
+---
+
+## 2. Recipience Function
+
+Captures how feedback supports interpretation and action, based on feedback literacy models.
+
+| Category | Description | Guiding Question |
+|----------|-------------|------------------|
+| **Standards / Criteria** | Explains what “good” looks like; defines expectations; aligns with rubric or DDD conventions. | Does the feedback clarify evaluation criteria? |
+| **Diagnose Gaps** | Identifies a problem, inconsistency, or missing element in the artifact; may not specify how to fix it. | Does the feedback prompt evaluation of the current artifact? |
+| **Prescribe Actions** | Translates feedback into concrete revision steps (e.g., add, rename, link, define, split). | Does the feedback suggest specific changes or tasks? |
+
+---
+
+## 3. Actionability (0–3)
+
+Measures the extent to which a feedback item can be translated into a concrete revision task.
+
+| Score | Label | Description |
+|------|------|-------------|
+| **0** | Not actionable | Vague evaluation only (e.g., “unclear”, “needs improvement”) with no concrete next step. |
+| **1** | Weakly actionable | Suggests a direction but lacks specificity about where or how to implement the change (e.g., “improve traceability”, “clarify workflows”). |
+| **2** | Actionable | Describes a concrete change (e.g., rename, add, link, split, define) that is feasible within the task scope, even if not explicitly anchored to a location. |
+| **3** | Highly actionable | Concrete change with explicit reference to the artifact (e.g., “in workflow X…”, “rename event Y…”, “add step between A→B…”). Low ambiguity; easy to execute and verify. |
+
+---
+
+## Notes
+
+- Coding is performed at the **issue level** (deduplicated feedback items).
+- When multiple mentions of the same issue occur, the **maximum actionability score** is retained.
+- Strength-only or purely positive feedback is excluded from the corrective dataset.
